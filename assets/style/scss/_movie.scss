@@ -1,0 +1,169 @@
+.movie {
+	position: relative;
+	.container {
+		.header {
+			text-align: center;
+			.sub-header {
+				&.h-two {
+					@include breakpoint(mobile) {
+						display: none;
+					}
+				}
+				&.h-three {
+					background: transparent;
+					padding: 0;
+					img {
+						width: 82%;
+						margin-bottom: -6px;
+						@include breakpoint(tablet) {
+							width: 100%;
+						}
+					}
+					p {
+						font-family: july_bold;
+						@include font-size(20);
+						background: $yellow;
+						width: 82%;
+						margin: 0 auto;
+						padding: 5px 0;
+						@include breakpoint(tablet) {
+							@include font-size(20);
+							width: 100%;
+						}
+						@include breakpoint(mobile) {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+		.trailer {
+			position: absolute;
+			top: 272px;
+			left: 340px;
+			@include breakpoint(tablet) {
+				// top: 220px;
+				// left: 70px;
+				top: 185px;
+				left: 40px;
+			}
+			@include breakpoint(tablet-wide) {
+				// top: 220px;
+				// left: 120px;
+				top: 225px;
+				left: 53px;
+			}
+			@include breakpoint(mobile) {
+				top: 755px;
+				left: 18px;
+			}
+			iframe {
+				width: 400px;
+				height: 225px;
+				@include breakpoint(tablet) {
+					width: 350px;
+					height: 197px;
+				}
+				@include breakpoint(tablet-wide) {
+					width: 400px;
+					height: 225px;
+				}
+				@include breakpoint(mobile) {
+					width: 340px;
+					height: 191px;
+				}
+			}
+			.sub-trailer {
+				margin-top: 10px;
+				.detail {
+					display: inline-block;
+					width: calc(100%/2 - 5px);
+					text-align: center;
+					vertical-align: middle;
+					@include breakpoint(mobile) {
+						display: block;
+					}
+					&.short-info {
+						font-family: july_bold;
+						background-image: url(../../images/rect.png);
+						background-size: cover;
+						@include breakpoint(mobile) {
+							margin: 0 auto;
+						}
+						p {
+							color: $black;
+							padding: 28px 0;
+							&.dtmr {
+								padding: 21px 0;
+								@include breakpoint(tablet) {
+									padding: 14px 0;
+								}
+								@include breakpoint(mobile) {
+									padding: 12px 0;
+								}
+							}
+							&.ovs {
+								padding: 35px 0;
+								@include breakpoint(tablet) {
+									padding: 28px 0;
+								}
+								@include breakpoint(mobile) {
+									padding: 26px 0;
+								}
+							}
+							@include font-size(8);
+							@include breakpoint(tablet) {
+								padding: 21px 0;
+							}
+							@include breakpoint(tablet-wide) {
+								padding: 28px 0;
+							}
+							@include breakpoint(mobile) {
+								padding: 19px 0;
+							}
+						}
+					}
+					&.vote-btn {
+						@include breakpoint(mobile) {
+							margin: 0 auto;
+							margin-top: 20px;
+						}
+						a {
+							img {
+								width: 80%;
+							}
+						}
+					}
+				}
+			}
+		}
+		.info {
+			margin-top: 50px;
+			@include breakpoint(tablet) {
+				margin-top: 120px;
+			}
+			@include breakpoint(mobile) {
+				margin-top: 460px;
+			}
+			.container {
+				width: 1075px;
+				background: $yellow;
+				padding: 15px 30px;
+				@include breakpoint(tablet) {
+					width: 100%;
+					margin: 0 auto;
+				}
+				p {
+					color: $black;
+					@include font-size(14);
+					&:first-child {
+						font-weight: bold;
+					}
+					&:nth-child(3) {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}

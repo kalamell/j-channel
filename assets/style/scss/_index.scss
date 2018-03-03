@@ -1,0 +1,208 @@
+.wrapper {
+	overflow: hidden;
+	.container {
+		@include breakpoint(tablet) {
+			width: 90%;
+			margin: 0 auto;
+		}
+		.header {
+			.sub-header {
+				display: inline-block;
+				@include breakpoint(mobile) {
+					display: block;
+				}
+				&.h-one {
+					width: 18%;
+					@include breakpoint(tablet) {
+						background: $yellow;
+					}
+					@include breakpoint(mobile) {
+						width: 45%;
+						margin: 0 auto;
+					}
+					img {
+						@include breakpoint(tablet) {
+							padding-top: 35px;
+						}
+						@include breakpoint(tablet-wide) {
+							padding-top: 0;
+						}
+						@include breakpoint(mobile) {
+							padding-top: 0;
+						}
+					}
+				}
+				&.h-two {
+					width: 40%;
+					background: $black;
+					text-align: center;
+					vertical-align: top;
+					padding: 80px 5px 0;
+					@include breakpoint(tablet) {
+						padding: 48px 5px 0;
+					}
+					@include breakpoint(mobile-wide) {
+						width: 39%;
+						padding: 18px 5px 0;
+					}
+					@include breakpoint(mobile) {
+						width: 100%;
+						padding: 40px 5px;
+					}
+					p {
+						color: $white;
+						@include font-size(11);
+						@include breakpoint(tablet) {
+							@include font-size(10);
+						}
+						@include breakpoint(mobile) {
+							@include font-size(14);
+						}
+					}
+					img {
+						width: 90%;
+						padding: 10px 0;
+						@include breakpoint(mobile) {
+							width: 100%;
+						}
+					}
+				}
+				&.h-three {
+					width: 40%;
+					background: $yellow;
+					vertical-align: top;
+					padding: 32px 20px;
+					text-align: center;
+					@include breakpoint(tablet) {
+						padding: 20px;
+					}
+					@include breakpoint(tablet-wide) {
+						padding: 29px 20px;
+					}
+					@include breakpoint(mobile) {
+						width: 100%;
+					}
+					p.big {
+						@include font-size(14);
+						padding-top: 8px;
+						@include breakpoint(tablet) {
+							@include font-size(12);
+							padding-top: 0;
+						}
+						@include breakpoint(mobile) {
+							@include font-size(16);
+							padding-top: 8px;
+						}
+					}
+					p.small {
+						@include font-size(11);
+						padding-bottom: 8px;
+						@include breakpoint(tablet) {
+							@include font-size(10);
+							padding-bottom: 0;
+						}
+						@include breakpoint(mobile) {
+							@include font-size(12);
+							padding-bottom: 8px;
+						}
+					}
+				}
+			}
+		}
+		.content {
+			margin: 40px 0;
+			.container {
+				width: 1150px;
+				@include breakpoint(tablet) {
+					width: 100%;
+					margin: 0 auto;
+				}
+				ul {
+					text-align: center;
+					li {
+						display: inline-block;
+						width: 24%;
+						padding: 0 25px;
+						@include breakpoint(tablet) {
+							width: 48%;
+							margin-top: 40px;
+						}
+						@include breakpoint(mobile) {
+							display: block;
+							width: 100%;
+							padding: 0;
+						}
+						a {
+							border: 1px solid transparent;
+							&:hover {
+								border: 1px solid $yellow;
+							}
+							img {
+								margin-bottom: -6px;
+							}
+							p {
+								color: $black;
+								background: $yellow;
+								font-family: july_bold;
+								@include font-size(14);
+								padding: 5px 0;
+								@include breakpoint(mobile) {
+									@include font-size(16);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.condition {
+			.container {
+				width: 1075px;
+				background: $yellow;
+				padding: 15px 10px;
+				@include breakpoint(tablet) {
+					width: 100%;
+					margin: 0 auto;
+				}
+				p {
+					@include font-size(10);
+					@include breakpoint(mobile) {
+						@include font-size(12);
+					}
+				}
+			}
+		}
+		.sponsor {
+			.container {
+				width: 1075px;
+				padding: 40px 0;
+				@include breakpoint(tablet) {
+					width: 100%;
+					margin: 0 auto;
+				}
+				.spon-pc {
+					display: block;
+					@include breakpoint(mobile) {
+						display: none;
+					}
+				}
+				.spon-mb {
+					display: none;
+					@include breakpoint(mobile) {
+						display: block;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+		.footer {
+			.container {
+				width: 1075px;
+				@include breakpoint(tablet) {
+					width: 100%;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}

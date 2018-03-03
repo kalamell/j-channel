@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'july_bold_italic';
+    src: url('../../fonts/th_k2d_july8_bold_italic-webfont.woff2') format('woff2'),
+         url('../../fonts/th_k2d_july8_bold_italic-webfont.woff') format('woff'),
+         url('../../fonts/th_k2d_july8_bold_italic-webfont.svg#th_k2d_july8bold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'july_bold';
+    src: url('../../fonts/th_k2d_july8_bold-webfont.woff2') format('woff2'),
+         url('../../fonts/th_k2d_july8_bold-webfont.woff') format('woff'),
+         url('../../fonts/th_k2d_july8_bold-webfont.svg#th_k2d_july8bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'july_italic';
+    src: url('../../fonts/th_k2d_july8_italic-webfont.woff2') format('woff2'),
+         url('../../fonts/th_k2d_july8_italic-webfont.woff') format('woff'),
+         url('../../fonts/th_k2d_july8_italic-webfont.svg#th_k2d_july8italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'july';
+    src: url('../../fonts/th_k2d_july8-webfont.woff2') format('woff2'),
+         url('../../fonts/th_k2d_july8-webfont.woff') format('woff'),
+         url('../../fonts/th_k2d_july8-webfont.svg#th_k2d_july8regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'july', sans-serif;
+	text-rendering: optimizeLegibility;
+    background-image: url(../../images/bg.jpg);
+    background-size: cover;
+	body {
+		margin: 0;
+	}
+}
+
+img {max-width: 100%;}
+
+a, a:active, a:focus, a:hover {
+	outline: none;
+	text-decoration: none;
+	transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6,p {margin: 0;}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.clear {clear:both;}
+
+ul {
+	li {
+		list-style: none;
+	}
+}
+
+// color
+$yellow: #ffde00;
+$black: #000000;
+$white: #ffffff;
+
+// breakpoint
+$MQs: true;
+
+@mixin breakpoint($point) {
+  	@if ($MQs) {
+	    $bp-mobile: "(max-width: 40em)";
+        $bp-mobile-wide: "(max-width: 60em)";
+	    $bp-tablet: "(max-width: 70em)";
+	    $bp-tablet-wide: "(min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1)";
+	    $bp-desktop: "(max-width: 100em)";
+	    $bp-over: "(min-width: 1460px)";
+
+	  	
+	    @if $point == desktop {
+	      	@media #{$bp-desktop} { @content; }
+	    }
+	    @else if $point == tablet {
+	      	@media #{$bp-tablet} { @content; }
+	    }
+	    @else if $point == tablet-wide {
+	      	@media #{$bp-tablet-wide} { @content; }
+	    }
+	    @else if $point == mobile {
+	      	@media #{$bp-mobile}  { @content; }
+	    }
+        @else if $point == mobile-wide {
+            @media #{$bp-mobile-wide}  { @content; }
+        }
+	    @else if $point == over {
+	      	@media #{$bp-over} { @content; }
+	    }
+  	}
+}
+
+// clearfix
+%clearfix {
+	*zoom: 1;
+	&:before, &:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// pseudo
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+
+// Responsive ratio
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+    $padding: unquote( ( $y / $x ) * 100 + '%' );
+    @if $pseudo {
+        &:before {
+            @include pseudo($pos: relative);
+            width: 100%;
+            padding-top: $padding;
+        }
+    } @else {
+        padding-top: $padding;
+    }
+}
+
+// fontsize
+@mixin font-size($size) {
+	font-size: $size * 1px;
+	font-size: $size * 0.1rem;
+}
+
+// keyframes
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
