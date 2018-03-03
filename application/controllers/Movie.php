@@ -15,7 +15,7 @@ class Movie extends CI_Controller {
 
 	public function id($id)
 	{
-		if ($id< 1 && $id <4) redirect('');
+		if ($id< 1 && $id >4) redirect('');
 		$this->load->view('movie/t'.$id);
 	}
 }
