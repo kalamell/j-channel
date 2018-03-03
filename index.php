@@ -61,10 +61,8 @@
 
 if($_SERVER['HTTPS']!="on")
 {
-	$redirect= "https://"."://{$_SERVER['SERVER_NAME']}".str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']));
-	//header('Location:$redirect');
-
-echo $redirect;
+	$redirect= "http://j-channel.jp/oimf/vote/";
+	header('Location:$redirect');
 }
 
 /*
