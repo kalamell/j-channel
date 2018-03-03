@@ -61,7 +61,7 @@
 
 if($_SERVER['HTTPS']!="on")
 {
-	$redirect= "http://j-channel.jp/oimf/vote/";
+	$redirect= "https://j-channel.jp/oimf/vote/";
 	header('Location:'.$redirect);
 }
 
