@@ -13,6 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   	<meta property="og:image"         content="" />
 	<title>10th Okinawa International Movie Festival</title>
 	<link rel="stylesheet" href="<?php echo base_url();?>assets/style/css/main.css">
+	<?php $this->load->view('ga');?>
 </head>
 <body>
 	<div class="wrapper">
