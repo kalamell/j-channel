@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="container">
 			<div class="header">
 				<div class="sub-header h-one">
-					<a href="index.html"><img src="<?php echo base_url();?>assets/images/logo.jpg" alt=""></a>
+					<a href="<?php echo site_url();?>"><img src="<?php echo base_url();?>assets/images/logo.jpg" alt=""></a>
 				</div>
 				<div class="sub-header h-two">
 					<p>ลุ้นบินลัดฟ้า ร่วมสัมผัสประสบการณ์เกาะสวรรค์และเทศกาลภาพยนตร์นานาชาติโอกินาว่า<br/>ถึงประเทศญี่ปุ่น เพียงร่วมโหวตภาพยนตร์ที่คุณชื่นชอบ<br/>เพื่อเป็นตัวแทนภาพยนตร์ไทยในงานภาพยนตร์นานาชาติโอกินาว่า</p>
@@ -37,25 +37,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="container">
 					<ul>
 						<li class="sub-content c-one">
-							<a href="t1.html">
+							<a href="<?php echo site_url('movie/id/1');?>">
 								<img src="<?php echo base_url();?>assets/images/genius.jpg" alt="">
 								<p>T1 ฉลาดเกมส์โกง</p>
 							</a>
 						</li>
 						<li class="sub-content c-two">
-							<a href="t2.html">
+							<a href="<?php echo site_url('movie/id/2');?>">
 								<img src="<?php echo base_url();?>assets/images/dietmr.jpg" alt="">
 								<p>T2 Die Tomorrow</p>
 							</a>
 						</li>
 						<li class="sub-content c-three">
-							<a href="t3.html">
+							<a href="<?php echo site_url('movie/id/3');?>">
 								<img src="<?php echo base_url();?>assets/images/oversize.jpg" alt="">
 								<p>T3 โอเวอร์ไซส์ ทลายพุง</p>
 							</a>
 						</li>
 						<li class="sub-content c-four">
-							<a href="t4.html">
+							<a href="<?php echo site_url('movie/id/4');?>">
 								<img src="<?php echo base_url();?>assets/images/9.jpg" alt="">
 								<p>T4 9 ศาสตรา</p>
 							</a>
