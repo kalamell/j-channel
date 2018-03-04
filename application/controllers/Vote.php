@@ -20,7 +20,7 @@ class Vote extends CI_Controller {
 		if ($id < 1 && $id > 4) redirect('');
 
 		$this->session->set_userdata('current_url', current_url());
-		if ($this->facebook->is_authenticated()) {
+		if ($this->session->userdata('id')) {
 			
 			if ($this->session->userdata('id')) {
 				$this->vote->setVote($id, $this->session->userdata('id'));
