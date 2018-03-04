@@ -1,6 +1,3 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,8 +74,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			<div class="sponsor">
 				<div class="container">
-					<img src="<?php echo base_url();?>assets/images/sponsor-pc.png" class="spon-pc" alt="">
-					<img src="<?php echo base_url();?>assets/images/sponsor-mb.png" class="spon-mb" alt="">
+					<ul>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/contentth.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/culture.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/mono29.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/mthai.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/jchannel.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/yoshimoto.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/mcip.png" alt=""></a></li>
+					</ul>
 				</div>
 			</div>
 			<div class="footer">

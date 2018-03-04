@@ -167,3 +167,163 @@
 		}
 	}
 }
+@media only screen and (min-width: 1024px) and (max-width: 1030px) {
+	.movie {
+		.container {
+			.trailer {
+				top: 270px;
+				left: 100px;
+				iframe {
+					width: 450px;
+					height: 253px;
+				}
+				.sub-trailer {
+					.detail {
+						&.short-info {
+							p {
+								padding: 35px 0;
+								&.dtmr {
+									padding: 28px 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 812px) and (max-width: 820px) {
+	.movie {
+		.container {
+			.trailer {
+				top: 200px;
+				left: 45px;
+				.sub-trailer {
+					.detail {
+						&.short-info {
+							p {
+								&.ovs {
+									padding: 35px 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 775px) {
+	.movie {
+		.container {
+			.trailer {
+				top: 220px;
+				left: 70px;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 736px) and (max-width: 740px) {
+	.movie {
+		.container {
+			.trailer {
+				top: 210px;
+				left: 40px;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 667px) and (max-width: 670px) {
+	.movie {
+		.container {
+			.trailer {
+				top: 185px;
+				left: 35px;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 640px) and (max-width: 650px) {
+	.movie {
+		.container {
+			.trailer {
+				top: 1210px;
+				left: 70px;
+				iframe {
+					width: 500px;
+					height: 281px;
+				}
+				.sub-trailer {
+					.detail {
+						display: inline-block;
+						&.short-info {
+							p {
+								padding: 42px 0;
+								&.dtmr {
+									padding: 35px 0;
+								}
+								&.ovs {
+									padding: 49px 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 414px) and (max-width: 420px) {
+	.movie {
+		.container {
+			.trailer {
+				top: 820px;
+				left: 27px;
+				iframe {
+					width: 360px;
+					height: 203px;
+				}
+				.sub-trailer {
+					.detail {
+						&.short-info {
+							p {
+								padding: 22px 0;
+								&.ovs {
+									padding: 29px 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 360px) and (max-width: 365px) {
+	.movie {
+		.container {
+			.trailer {
+				iframe {
+					width: 324px;
+					height: 182px;
+				}
+				.sub-trailer {
+					.detail {
+						&.short-info {
+							p {
+								padding: 17px 0;
+								&.dtmr {
+									padding: 10px 0;
+								}
+								&.ovs {
+									padding: 24px 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
