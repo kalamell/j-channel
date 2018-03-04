@@ -9,12 +9,19 @@ class Vote extends CI_Controller {
 		$this->load->model('vote_model', 'vote');
 	}
 
-	public function index($id)
+	public function index()
 	{
+		redirect('');
+	}
+
+	public function id($id)
+	{
+		$id = (int)$id;
+		if ($id < 1 && $id > 4) redirect('');
+
 		$this->session->set_userdata('current_url', current_url());
 		if ($this->facebook->is_authenticated()) {
-			echo 'ok';
-
+			
 			if ($this->session->userdata('id')) {
 				$this->vote->setVote($id, $this->session->userdata('id'));
 			} 
