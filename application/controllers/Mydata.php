@@ -28,7 +28,7 @@ class Mydata extends CI_Controller {
 		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.movie_id = movie.movie_id) as c FROM movie';
 		$this->movie = $this->db->query($sql)->result();
 
-		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.member_id = member.id) as c FROM member JOIN vote ON member.id = vote.member_id WHERE vote.movie_id = ?';
+		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.member_id = member.id and vote.movie_id = movie.movie_id) as c FROM member JOIN vote ON member.id = vote.member_id WHERE vote.movie_id = ? group by member.id';
 		$this->member = $this->db->query($sql, array(
 			$id
 		))->result();
