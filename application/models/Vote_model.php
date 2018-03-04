@@ -26,7 +26,7 @@ class Vote_model extends CI_Model
 				$id, $member_id
 			));
 
-			if ($rs->num_rows() > 0) {
+			if ($rs->num_rows() == 0) {
 				$this->db->set('vote_date', 'NOW()', false)->insert('vote', array(
 					'member_id' => $member_id,
 					'movie_id' => $id
