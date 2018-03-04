@@ -20,8 +20,8 @@ class Member_model extends CI_Model
 					'provider' => $data['provider'],
 					'uid' => $data['uid'],
 					'email' => $data['email'],
-					'firstname' => $data['firstname'],
-					'lastname' => $data['lastname'],
+					'firstname' => $data['first_name'],
+					'lastname' => $data['last_name'],
 					'gender' => $data['gender'],
 					'locale' => $data['locale'],
 					'profile_url' => $data['profile_url'],
@@ -33,8 +33,8 @@ class Member_model extends CI_Model
 			} else {
 				$this->db->set('updated_date', 'NOW()', false)->where('id', $rs->row()->id)->update('member', array(
 					'email' => $data['email'],
-					'firstname' => $data['firstname'],
-					'lastname' => $data['lastname'],
+					'firstname' => $data['first_name'],
+					'lastname' => $data['last_name'],
 					'gender' => $data['gender'],
 					'locale' => $data['locale'],
 					'profile_url' => $data['profile_url'],
