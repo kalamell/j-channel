@@ -10,7 +10,7 @@ class Member_model extends CI_Model
 
 	public function checkUser($data = array()) {
 		if (count($data)>0) {
-			$rs = $this->db->where(arary(
+			$rs = $this->db->where(array(
 				'provider' => $data['provider'],
 				'uid' => $data['uid'],
 			))->get('member');
@@ -29,7 +29,7 @@ class Member_model extends CI_Model
 					'ip' => $this->input->ip_address(),
 				));
 				$this->session->set_userdata('id', $this->db->insert_id());
-				
+
 			} else {
 				$this->db->set('updated_date', 'NOW()', false)->where('id', $rs->row()->id)->update('member', array(
 					'email' => $data['email'],
