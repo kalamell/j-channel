@@ -32,42 +32,12 @@ class Auth extends CI_Controller {
 
         redirect($this->session->userdata('current_url'));
 
-
-		/*print_r($this->session->userdata());
-
-		$userProfile = $this->facebook->request('get', '/me?fields=id,first_name,last_name,email,gender,locale,picture');
-
-		print_r($userProfile);
-
-		if ($this->facebook->is_authenticated()) {
-
-			$userProfile = $this->facebook->request('get', '/me?fields=id,first_name,last_name,email,gender,locale,picture');
-
-            // Preparing data for database insertion
-            $userData['provider'] = 'facebook';
-            $userData['uid'] = $userProfile['id'];
-            $userData['first_name'] = $userProfile['first_name'];
-            $userData['last_name'] = $userProfile['last_name'];
-            $userData['email'] = $userProfile['email'];
-            $userData['gender'] = $userProfile['gender'];
-            $userData['locale'] = $userProfile['locale'];
-            $userData['profile_url'] = 'https://www.facebook.com/'.$userProfile['id'];
-            $userData['picture_url'] = $userProfile['picture']['data']['url'];
-
-            // Insert or update user data
-            $userID = $this->member->checkUser($userData);
-
-            redirect($this->session->userdata('current_url'));
-
-
-		} else {
-			
-		}
-		*/
 	}
 
 	public function logout()
 	{
+		$this->session->sess_destroy();
+		redirect('');
 
 	}
 }
