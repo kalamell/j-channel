@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Main extends CI_Controller {
+class Vote extends CI_Controller {
 
 	public function __construct()
 	{
@@ -10,6 +10,10 @@ class Main extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('main');
+		if ($this->facebook->is_authenticated()) {
+
+		} else {
+			redirect($this->facebook->login_url());
+		}
 	}
 }
