@@ -12,7 +12,7 @@ class Vote_model extends CI_Model
 	{
 		$check = $this->db->where(array(
 			'member_id' => $member_id,
-			'movie_id' => $movie_id
+			'movie_id' => $id
 		))->get('vote');
 		
 		if ($check->num_rows() == 0) {
