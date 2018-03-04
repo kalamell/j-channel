@@ -31,10 +31,10 @@ class Auth extends CI_Controller {
             $userID = $this->member->checkUser($userData);
 
             redirect($this->session->userdata('current_url'));
-            
+
 
 		} else {
-			redirect('');
+			
 		}
 	}
 
