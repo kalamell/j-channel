@@ -20,6 +20,7 @@ class Movie extends CI_Controller {
 
 		if (!$this->facebook->is_authenticated()) {
 			$data['link'] = $this->facebook->login_url();
+			$this->session->set_userdata('current_url', 'vote/id/'.$id);
 		}
 
 		$this->load->view('movie/t'.$id, $data);
