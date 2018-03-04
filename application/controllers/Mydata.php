@@ -26,7 +26,7 @@ class Mydata extends CI_Controller {
 	{
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			if ($this->input->post('username') == 'admin' && $this->input->post('password') == 'admin') {
-				$thsi->session->set_userdata('admin', 1);
+				$this->session->set_userdata('admin', 1);
 			}
 		}	
 
