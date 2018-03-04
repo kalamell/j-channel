@@ -20,7 +20,7 @@
 				  </a>
 				  <?php foreach($movie as $m):?>
 				  <a href="<?php echo site_url('mydata/mv/'.$m->movie_id);?>" class="list-group-item">
-				  	<span class="badge"><?php echo $m->c;?> โหลต</span>
+				  	<span class="badge"><?php echo $m->c;?> โหวต</span>
 				  	<?php echo $m->movie_name;?>
 				  		
 				  </a>
@@ -31,6 +31,37 @@
 
 			<section class="col-md-8">
 				
+				<h2 class="page-header">ข้อมูลสมาชิก</h2>
+
+				<table class="table table-striped table-bordered">
+					<thead>
+						<tr>
+							<th>IMG</th>
+							<th>ข้อมูลสมาชิก</th>
+							<th>URL PROFILE</th>
+							<th>จำนวนโหวต</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php foreach($member as $m):?>
+							<tr>
+								<td><img src="<?php echo $m->pictur_url;?>" class="img-responsive"></td>
+								<td>
+									Email : <?php echo $m->email;?><br>
+									ชื่อ : <?php echo $m->first_name.' '.$m->last_name;?><br>
+									เพศ​ : <?php echo $m->gender;?><br>
+								</td>
+								<td>
+									<a href="<?php echo $m->profile_url;?>" target="_blank">Facebook</a>
+								</td>
+								<td><?php echo $m->c;?></td>
+							</tr>
+
+						<?php endforeach;?>
+					</tbody>
+					
+				</table>
+
 			</section>
 		</div>
 	</div>
