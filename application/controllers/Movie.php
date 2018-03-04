@@ -16,6 +16,12 @@ class Movie extends CI_Controller {
 	public function id($id)
 	{
 		if ($id< 1 && $id >4) redirect('');
-		$this->load->view('movie/t'.$id);
+		$this->link = site_url('vote/id/'.$id);
+
+		if (!$this->facebook->is_authenticated()) {
+			$htis->link = $this->facebook->login_url();
+		}
+
+		$this->load->view('movie/t'.$id, $this);
 	}
 }

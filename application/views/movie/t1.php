@@ -39,7 +39,7 @@
 						</p>
 					</div>
 					<div class="detail vote-btn">
-						<a href="">
+						<a href="<?php echo $link;?>">
 							<img src="<php echo base_url();?>assets/images/btn.png" alt="">
 						</a>
 					</div>
