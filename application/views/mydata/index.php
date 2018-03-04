@@ -15,9 +15,15 @@
 
 			<section class="col-md-4">
 				<div class="list-group">
-				  <a href="#" class="list-group-item">
+				  <a href="<?php echo site_url();?>" class="list-group-item">
 				    หน้าหลักแคมเปญ
 				  </a>
+
+				  <a href="<?php echo site_url('mydata');?>" class="list-group-item">
+				    หน้าหลักแคมเปญ
+				  </a>
+
+
 				  <?php foreach($movie as $m):?>
 				  <a href="<?php echo site_url('mydata/mv/'.$m->movie_id);?>" class="list-group-item">
 				  	<span class="badge"><?php echo $m->c;?> โหวต</span>

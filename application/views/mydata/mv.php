@@ -15,7 +15,11 @@
 
 			<section class="col-md-4">
 				<div class="list-group">
-				  <a href="#" class="list-group-item">
+				  <a href="<?php echo site_url();?>" class="list-group-item">
+				    หน้าหลักแคมเปญ
+				  </a>
+
+				  <a href="<?php echo site_url('mydata');?>" class="list-group-item">
 				    หน้าหลักแคมเปญ
 				  </a>
 				  <?php foreach($movie as $m):?>
