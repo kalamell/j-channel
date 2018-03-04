@@ -13,7 +13,7 @@ class Vote_model extends CI_Model
 		$check = $this->db->where(array(
 			'member_id' => $member_id,
 			'movie_id' => $movie_id
-		)))->get('vote');
+		))->get('vote');
 		
 		if ($check->num_rows() == 0) {
 			if ($rs->num_rows() > 0) {
@@ -22,7 +22,7 @@ class Vote_model extends CI_Model
 					'movie_id' => $id
 				));
 			}
-			
+
 		} else {
 
 			$rs = $this->db->query("SELECT * FROM `vote` WHERE vote_id = ? AND member_id = ? AND vote_timestamp <= CURRENT_TIMESTAMP - INTERVAL 60 MINUTE order by vote_timestamp DESC LIMIT 1", array(
