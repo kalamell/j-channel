@@ -7,9 +7,23 @@
 </head>
 <body>
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class='row'>
-			
+			<section class="col-md-4">
+				<div class="list-group">
+				  <a href="#" class="list-group-item">
+				    หน้าหลักแคมเปญ
+				  </a>
+				  <?php foreach($movie as $m):?>
+				  <a href="<?php echo site_url('mydata/mv/'.$m->id);?>" class="list-group-item"><?php echo $m->movie_name;?></a>
+				<?php endforeach;?>
+				</div>
+				
+			</section>
+
+			<section class="col-md-8">
+				
+			</section>
 		</div>
 	</div>
 
