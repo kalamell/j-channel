@@ -8,7 +8,7 @@
 <body>
 
 	<div class="container">
-		<div class='row'>
+		<div class='row' style="margin-top: 20px;">
 			<div class='col-md-offset-4 col-md-4'>
 				<?php echo form_open('');?>
 					<div class="form-group">

@@ -11,6 +11,8 @@ class Mydata extends CI_Controller {
 	public function index()
 	{
 		$this->_login();
+		
+		$this->load->view('mydata/index', $this);
 	}
 
 	public function login()
@@ -20,7 +22,13 @@ class Mydata extends CI_Controller {
 
 	public function do_login()
 	{
-		
+		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+			if ($this->input->post('username') == 'admin' && $this->input->post('password') == 'admin') {
+				$thsi->session->set_userdata('admin', 1);
+			}
+		}	
+
+		redirect('mydata');
 	}
 
 
