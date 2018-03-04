@@ -2,3 +2,4 @@ website
 application/config/config.php
 application/config/database.php
 application/config/facebook.php
+*.DS_Store
