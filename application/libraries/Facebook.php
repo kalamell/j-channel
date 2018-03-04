@@ -18,7 +18,7 @@
  */
 
 // Include the autoloader provided in the SDK
-require_once ('../vendor/autoload.php'); 
+require_once ('Facebook/autoload.php'); 
 
 use Facebook\Facebook as FB;
 use Facebook\Authentication\AccessToken;
