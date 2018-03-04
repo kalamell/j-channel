@@ -10,7 +10,7 @@
 	<div class="container">
 		<div class='row' style="margin-top: 20px;">
 			<div class='col-md-offset-4 col-md-4'>
-				<?php echo form_open('');?>
+				<?php echo form_open('mydata/do_login');?>
 					<div class="form-group">
 						<label>Usernmame</label>
 						<input type="text" name="username" class="form-control">
