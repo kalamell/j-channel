@@ -20,7 +20,7 @@
 				  </a>
 
 				  <a href="<?php echo site_url('mydata');?>" class="list-group-item">
-				    หน้าหลักแคมเปญ
+				    สมาชิก
 				  </a>
 				  <?php foreach($movie as $m):?>
 				  <a href="<?php echo site_url('mydata/mv/'.$m->movie_id);?>" class="list-group-item <?php echo $this->uri->segment(3) == $m->movie_id ? 'active' : '';?>">

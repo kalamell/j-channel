@@ -20,7 +20,7 @@
 				  </a>
 
 				  <a href="<?php echo site_url('mydata');?>" class="list-group-item">
-				    หน้าหลักแคมเปญ
+				    สมาชิก
 				  </a>
 
 
