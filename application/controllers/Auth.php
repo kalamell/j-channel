@@ -13,6 +13,10 @@ class Auth extends CI_Controller {
 	{
 		print_r($this->facebook->object());
 
+		$userProfile = $this->facebook->request('get', '/me?fields=id,first_name,last_name,email,gender,locale,picture');
+
+		print_r($userProfile);
+
 		/*print_r($this->session->userdata());
 
 		$userProfile = $this->facebook->request('get', '/me?fields=id,first_name,last_name,email,gender,locale,picture');
