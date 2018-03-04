@@ -9,21 +9,22 @@
   	<meta property="og:description"   content="" />
   	<meta property="og:image"         content="" />
 	<title>10th Okinawa International Movie Festival</title>
-	<link rel="stylesheet" href="assets/style/css/main.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/style/css/main.css">
+	<?php $this->load->view('ga');?>
 </head>
 <body>
 	<div class="wrapper movie">
 		<div class="container">
 			<div class="header">
 				<div class="sub-header h-one">
-					<a href="index.html"><img src="assets/images/logo.jpg" alt=""></a>
+					<a href="<?php echo site_url();?>"><img src="<?php echo base_url();?>assets/images/logo.jpg" alt=""></a>
 				</div>
 				<div class="sub-header h-two">
 					<p>ลุ้นบินลัดฟ้า ร่วมสัมผัสประสบการณ์เกาะสวรรค์และเทศกาลภาพยนตร์นานาชาติโอกินาว่า<br/>ถึงประเทศญี่ปุ่น เพียงร่วมโหวตภาพยนตร์ที่คุณชื่นชอบ<br/>เพื่อเป็นตัวแทนภาพยนตร์ไทยในงานภาพยนตร์นานาชาติโอกินาว่า</p>
-					<img src="assets/images/headcenter.png" alt="">
+					<img src="<?php echo base_url();?>assets/images/headcenter.png" alt="">
 				</div>
 				<div class="sub-header h-three">
-					<img src="assets/images/dietmr.jpg" alt="">
+					<img src="<?php echo base_url();?>assets/images/dietmr.jpg" alt="">
 					<p>T2 Die Tomorrow</p>
 				</div>
 			</div>
@@ -39,7 +40,7 @@
 					</div>
 					<div class="detail vote-btn">
 						<a href="">
-							<img src="assets/images/btn.png" alt="">
+							<img src="<?php echo base_url();?>assets/images/btn.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -55,19 +56,19 @@
 			<div class="sponsor">
 				<div class="container">
 					<ul>
-						<li><a href=""><img src="assets/images/contentth.png" alt=""></a></li>
-						<li><a href=""><img src="assets/images/culture.png" alt=""></a></li>
-						<li><a href=""><img src="assets/images/mono29.png" alt=""></a></li>
-						<li><a href=""><img src="assets/images/mthai.png" alt=""></a></li>
-						<li><a href=""><img src="assets/images/jchannel.png" alt=""></a></li>
-						<li><a href=""><img src="assets/images/yoshimoto.png" alt=""></a></li>
-						<li><a href=""><img src="assets/images/mcip.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/contentth.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/culture.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/mono29.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/mthai.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/jchannel.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/yoshimoto.png" alt=""></a></li>
+						<li><a href=""><img src="<?php echo base_url();?>assets/images/mcip.png" alt=""></a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="footer">
 				<div class="container">
-					<img src="assets/images/footer.jpg" alt="">
+					<img src="<?php echo base_url();?>assets/images/footer.jpg" alt="">
 				</div>
 			</div>
 		</div>
