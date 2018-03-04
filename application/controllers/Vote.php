@@ -25,6 +25,8 @@ class Vote extends CI_Controller {
 			if ($this->session->userdata('id')) {
 				$this->vote->setVote($id, $this->session->userdata('id'));
 			} 
+
+			$this->sessin->set_flashdata('save', 1);
 			
 			redirect('movie/id/'.$id);
 		} else {

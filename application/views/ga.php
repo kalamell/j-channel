@@ -27,3 +27,11 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+
+<?php 
+if ($this->session->flashdata('save')):?>
+
+<script type="text/javascript">
+  alert('ขอขอบคุณที่ร่วมสนุก');
+</script>
+<?php endif;?>
