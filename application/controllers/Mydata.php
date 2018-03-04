@@ -12,7 +12,7 @@ class Mydata extends CI_Controller {
 	{
 		$this->_login();
 		
-		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.movie_id = movie.id) as c FROM movie';
+		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.movie_id = movie.movie_id) as c FROM movie';
 		$this->movie = $this->db->query($sql)->result();
 		$this->load->view('mydata/index', $this);
 	}
