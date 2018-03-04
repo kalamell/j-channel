@@ -22,7 +22,7 @@ class Vote_model extends CI_Model
 			));
 		} else {
 
-			$rs = $this->db->query("SELECT * FROM `vote` WHERE movie_id = ? AND member_id = ? AND vote_timestamp <= CURRENT_TIMESTAMP - INTERVAL 60 MINUTE order by vote_timestamp DESC LIMIT 1", array(
+			$rs = $this->db->query("SELECT *, (CURRENT_TIMESTAMP) as curr , (vote_timestamp + INTERVAL 60 MINUTE)as m60  FROM `vote` WHERE movie_id = ? AND member_id = ? having m60 > curr", array(
 				$id, $member_id
 			));
 
