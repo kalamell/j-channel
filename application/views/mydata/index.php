@@ -48,7 +48,7 @@
 								<td><img src="<?php echo $m->picture_url;?>" class="img-responsive"></td>
 								<td>
 									Email : <?php echo $m->email;?><br>
-									ชื่อ : <?php echo $m->first_name.' '.$m->last_name;?><br>
+									ชื่อ : <?php echo $m->firstname.' '.$m->lastname;?><br>
 									เพศ​ : <?php echo $m->gender;?><br>
 								</td>
 								<td>
