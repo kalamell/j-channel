@@ -19,18 +19,16 @@
 				    หน้าหลักแคมเปญ
 				  </a>
 
-				  <a href="<?php echo site_url('mydata');?>" class="list-group-item">
+				  <a href="<?php echo site_url('mydata');?>" class="list-group-item active">
 				    สมาชิก
 				  </a>
 
-
-				  <?php foreach($movie as $m):?>
-				  <a href="<?php echo site_url('mydata/mv/'.$m->movie_id);?>" class="list-group-item">
-				  	<span class="badge"><?php echo $m->c;?> โหวต</span>
-				  	<?php echo $m->movie_name;?>
-				  		
+				  <a href="<?php echo site_url('mydata/movie');?>" class="list-group-item">
+				    ข้อมูลหนัง
 				  </a>
-				<?php endforeach;?>
+
+
+				  
 				</div>
 				
 			</section>

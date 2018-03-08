@@ -20,6 +20,15 @@ class Mydata extends CI_Controller {
 		$this->load->view('mydata/index', $this);
 	}
 
+	public function movie()
+	{
+		
+		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.movie_id = movie.movie_id) as c FROM movie';
+		$this->movie = $this->db->query($sql)->result();
+		$this->load->view('mydata/movie', $this);
+
+	}
+
 
 	public function mv($id)
 	{
