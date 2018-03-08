@@ -37,14 +37,14 @@
   $(function() {
     
     <?php if ($this->session->flashdata('save')):?>
-    $.fancybox.show({
+    $.fancybox.open({
       type: 'image',
       src: '<?php echo base_url('assets/images/thankyou.png');?>'
     })
     <?php endif;?>
 
     <?php if ($this->session->flashdata('expire')):?>
-    $.fancybox.show({
+    $.fancybox.open({
       type: 'image',
       src: '<?php echo base_url('assets/images/sorry.png');?>'
     })
