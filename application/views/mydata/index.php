@@ -37,7 +37,7 @@
 				
 				<h2 class="page-header">ข้อมูลสมาชิก</h2>
 
-				<a href="<?php echo site_url('mydata/export_member');?>" class="btn btn-sm btn-default">Export รายชื่อ</a><br>
+				<a href="<?php echo site_url('mydata/export_member');?>" class="btn btn-sm btn-info">Export รายชื่อ</a><br><br>
 
 				<table class="table table-striped table-bordered">
 					<thead>
