@@ -23,7 +23,7 @@
 					<p>ลุ้นบินลัดฟ้า ร่วมสัมผัสประสบการณ์เกาะสวรรค์และเทศกาลภาพยนตร์นานาชาติโอกินาว่า<br/>ถึงประเทศญี่ปุ่น เพียงร่วมโหวตภาพยนตร์ที่คุณชื่นชอบ<br/>เพื่อเป็นตัวแทนภาพยนตร์ไทยในงานภาพยนตร์นานาชาติโอกินาว่า</p>
 					<img src="<?php echo base_url();?>assets/images/headcenter.png" alt="">
 				</div>
-				<div class="sub-header h-three">
+				<div class="sub-header h-three" onclick="top.location.href = 'https://j-channel.jp/th/oimf/';" style="cursor: pointer;">
 					<img src="<?php echo base_url();?>assets/images/headright.png" alt="">
 					<p class="big">เทศกาลภาพยนตร์นานาชาติโอกินาว่า ครั้งที่ 10</p>
 					<p class="small">วันที่ 19 - 22 เมษายน 2561<br/>
