@@ -54,11 +54,11 @@
 								<td style="text-align: center;"><?php echo $m->c;?></td>
 								<td style="text-align: center;">
 									<div class="btn-group">
-										<a href="<?php echo site_url('mydata/mv/'.$m->movie_id);?>" class="btn btn-sm btn-default">แสดงข้อมูล</a></td>
+										<a href="<?php echo site_url('mydata/mv/'.$m->movie_id);?>" class="btn btn-sm btn-default">แสดงข้อมูล</a>
 
 										<a href="<?php echo site_url('mydata/export_mv/'.$m->movie_id);?>" class="btn btn-sm btn-info">Export excel</a>
 									</div>
-									</td>
+								</td>
 							</tr>
 
 						<?php endforeach;?>
