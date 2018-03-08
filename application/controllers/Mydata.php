@@ -25,8 +25,7 @@ class Mydata extends CI_Controller {
 
 		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.member_id = member.id) as c FROM member'.$w;
 
-		echo $sql;
-		exit();
+		
 		$this->member = $this->db->query($sql)->result();
 
 		$this->load->view('mydata/index', $this);
