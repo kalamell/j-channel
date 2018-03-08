@@ -20,6 +20,7 @@ class Vote_model extends CI_Model
 				'member_id' => $member_id,
 				'movie_id' => $id
 			));
+			$this->session->set_flashdata('save', 1);
 		} else {
 
 			$rs = $this->db->query("SELECT *, (CURRENT_TIMESTAMP) as curr , (vote_timestamp + INTERVAL 60 MINUTE)as m60  FROM `vote` WHERE movie_id = ? AND member_id = ? having m60 > curr", array(
