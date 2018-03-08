@@ -37,7 +37,7 @@
 				
 				<h2 class="page-header">ข้อมูลการโหวต <?php echo $r->movie_name;?></h2>
 
-				<p><a href="<?php echo site_url('mydata/export_mv/'.$r->movie_id);?>" class="btn btn-sm btn-info">Export Excel</a></p>
+				<p><a href="<?php echo site_url('mydata/export_mv/'.$this->uri->segment(3));?>" class="btn btn-sm btn-info">Export Excel</a></p>
 
 				<br>
 
