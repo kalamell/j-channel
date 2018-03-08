@@ -87,10 +87,10 @@ class Mydata extends CI_Controller {
 
 		$this->mv = $this->db->where('movie_id', $id)->get('movie')->row();
 
-		/*$sql = 'SELECT *  FROM member JOIN vote ON member.id = vote.member_id WHERE vote.movie_id = ?';
+		$sql = 'SELECT *  FROM member JOIN vote ON member.id = vote.member_id WHERE vote.movie_id = ?';
 		$this->member = $this->db->query($sql, array(
 			$id, $id
-		))->result();*/
+		))->result();
 
 		$this->load->view('mydata/export_mv', $this);
 	}
