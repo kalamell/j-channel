@@ -28,10 +28,29 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<?php 
-if ($this->session->flashdata('save')):?>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/css/jquery.fancybox.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js"></script>
+
 
 <script type="text/javascript">
-  alert('ขอขอบคุณที่ร่วมสนุก');
+  $(function() {
+    
+    <?php if ($this->session->flashdata('save')):?>
+    $.fancybox.show({
+      type: 'image',
+      src: '<?php echo base_url('assets/images/thankyou.png');?>'
+    })
+    <?php endif;?>
+
+    <?php if ($this->session->flashdata('expire')):?>
+    $.fancybox.show({
+      type: 'image',
+      src: '<?php echo base_url('assets/images/sorry.png');?>'
+    })
+    <?php endif;?>
+
+  })
 </script>
-<?php endif;?>
+
+

@@ -31,6 +31,9 @@ class Vote_model extends CI_Model
 					'member_id' => $member_id,
 					'movie_id' => $id
 				));
+				$this->session->set_flashdata('save', 1);
+			} else {
+				$this->session->set_flashdata('expire', 1);
 			}
 		}
 		return true;
