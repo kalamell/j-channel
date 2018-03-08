@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteBase /th/oimf/vote/
+RewriteBase /th/oimf_campaign/vote/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /th/oimf/vote/index.php [L]
+RewriteRule . /th/oimf_campaign/vote/index.php [L]
