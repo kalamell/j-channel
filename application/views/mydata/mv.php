@@ -13,7 +13,7 @@
 				<h2 class="page-header">ข้อมูลการโหวต</h2>
 			</div>
 
-			<section class="col-md-4">
+			<section class="col-md-3">
 				<div class="list-group">
 				  <a href="<?php echo site_url();?>" class="list-group-item">
 				    หน้าหลักแคมเปญ
@@ -33,7 +33,7 @@
 				
 			</section>
 
-			<section class="col-md-8">
+			<section class="col-md-9">
 				
 				<h2 class="page-header">ข้อมูลการโหวต <?php echo $r->movie_name;?></h2>
 
