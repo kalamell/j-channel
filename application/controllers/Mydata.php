@@ -71,8 +71,8 @@ class Mydata extends CI_Controller {
 
 	public function export_member()
 	{
-		//header("Content-Disposition: attachment; filename=export_member_okinawa.xls");
-		//header("Content-Type: application/vnd.ms-excel");
+		header("Content-Disposition: attachment; filename=export_member_okinawa.xls");
+		header("Content-Type: application/vnd.ms-excel");
 
 		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.member_id = member.id) as c FROM member';
 		$this->member = $this->db->query($sql)->result();
@@ -82,8 +82,8 @@ class Mydata extends CI_Controller {
 
 	public function export_mv($id)
 	{
-		//header("Content-Disposition: attachment; filename=export_member_okinawa.xls");
-		//header("Content-Type: application/vnd.ms-excel");
+		header("Content-Disposition: attachment; filename=export_movie_".$id."_okinawa.xls");
+		header("Content-Type: application/vnd.ms-excel");
 
 		$this->mv = $this->db->where('movie_id', $id)->get('movie')->row();
 
