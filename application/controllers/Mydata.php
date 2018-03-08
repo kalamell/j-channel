@@ -15,6 +15,7 @@ class Mydata extends CI_Controller {
 		
 		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.movie_id = movie.movie_id) as c FROM movie';
 		$this->movie = $this->db->query($sql)->result();
+		
 		$w = '';
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			
