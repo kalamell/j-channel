@@ -10,7 +10,7 @@
 	<div class="container-fluid">
 		<div class='row'>
 			<div class='col-md-12'>
-				<h2 class="page-header">ข้อมูลสมาชิกที่โหวด <?php echo $mv->movie_name;?></h2>
+				<h2 class="page-header">ข้อมูลสมาชิกที่โหวต <?php echo $mv->movie_name;?></h2>
 			</div>
 
 			
