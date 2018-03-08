@@ -16,6 +16,12 @@ class Mydata extends CI_Controller {
 		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.movie_id = movie.movie_id) as c FROM movie';
 		$this->movie = $this->db->query($sql)->result();
 
+		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+			$this->db->like('firtname', $this->input->post('txt'))
+						->or_like('lastname', $this->input->post('txt'))
+						->or_like('email', $this->input->post('txt'));
+		}
+
 		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.member_id = member.id) as c FROM member';
 		$this->member = $this->db->query($sql)->result();
 		$this->load->view('mydata/index', $this);

@@ -39,6 +39,11 @@
 
 				<a href="<?php echo site_url('mydata/export_member');?>" class="btn btn-sm btn-info">Export รายชื่อ</a><br><br>
 
+				<?php echo form_open('', array('class' => 'form-inline'));?>
+				<label>ค้นหา ชื่อ / Email</label>
+				<input type="text" name="txt" class="form-control" style="width: 250px;"> <button type="submit" class="btn-info btn-default btn">ค้นหา</button>
+				<?php echo form_close();?>
+
 				<table class="table table-striped table-bordered">
 					<thead>
 						<tr>
