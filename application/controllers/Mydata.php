@@ -19,7 +19,8 @@ class Mydata extends CI_Controller {
 		$w = '';
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			
-
+			$txt = $this->input->post('txt');
+			
 			$w = " WHERE firstname LIKE '%".$txt."%' OR lastname LIKE '%".$txt."%' OR email LIKE '%".$txt."%' ";
 		}
 
@@ -27,7 +28,7 @@ class Mydata extends CI_Controller {
 
 		
 		echo $sql;
-		
+
 		$this->member = $this->db->query($sql)->result();
 
 		$this->load->view('mydata/index', $this);
