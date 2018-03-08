@@ -45,7 +45,7 @@
 									$vote = getVote($m->id);
 									if (count($vote) > 0) {
 										foreach($vote as $v) {
-											echo $v->movite_name.' จำนวน '.$v->c.' ครั้ง<br>';
+											echo $v->movie_name.' จำนวน '.$v->c.' ครั้ง<br>';
 										}
 									} else {
 										echo '-';
