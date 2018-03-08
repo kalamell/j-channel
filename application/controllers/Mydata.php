@@ -89,7 +89,7 @@ class Mydata extends CI_Controller {
 
 		$sql = 'SELECT *  FROM member JOIN vote ON member.id = vote.member_id WHERE vote.movie_id = ?';
 		$this->member = $this->db->query($sql, array(
-			$id, $id
+			$id
 		))->result();
 
 		$this->load->view('mydata/export_mv', $this);
