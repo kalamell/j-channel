@@ -25,8 +25,6 @@ class Vote extends CI_Controller {
 			if ($this->session->userdata('id')) {
 				$this->vote->setVote($id, $this->session->userdata('id'));
 			} 
-
-			
 			
 			redirect('movie/id/'.$id);
 		} else {

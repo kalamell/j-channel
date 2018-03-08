@@ -40,6 +40,8 @@
   $(function() {
     
     <?php if ($this->session->flashdata('save')):?>
+    /* save */
+    
     $.fancybox.open({
       type: 'image',
       href: '<?php echo base_url('assets/images/thankyou.png');?>'
