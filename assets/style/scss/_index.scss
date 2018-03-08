@@ -121,16 +121,16 @@
 					text-align: center;
 					li {
 						display: inline-block;
-						width: 24%;
-						padding: 0 25px;
+						width: calc(100%/3 - 5px);
+						padding: 25px;
 						@include breakpoint(tablet) {
 							width: 48%;
-							margin-top: 40px;
 						}
 						@include breakpoint(mobile) {
 							display: block;
 							width: 100%;
 							padding: 0;
+							padding: 20px 0;
 						}
 						a {
 							border: 1px solid transparent;
@@ -213,6 +213,20 @@
 				@include breakpoint(tablet) {
 					width: 100%;
 					margin: 0 auto;
+				}
+			}
+		}
+	}
+	@media only screen and (min-width: 640px) and (max-width: 650px) {
+		.container {
+			.content {
+				.container {
+					ul {
+						li {
+							width: 67%;
+							margin: 0 auto;
+						}
+					}
 				}
 			}
 		}

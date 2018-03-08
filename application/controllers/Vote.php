@@ -17,7 +17,7 @@ class Vote extends CI_Controller {
 	public function id($id)
 	{
 		$id = (int)$id;
-		if ($id < 1 && $id > 4) redirect('');
+		if ($id < 1 && $id > 5) redirect('');
 
 		$this->session->set_userdata('current_url', current_url());
 		if ($this->session->userdata('id')) {

@@ -36,8 +36,8 @@
 					<ul>
 						<li class="sub-content c-one">
 							<a href="<?php echo site_url('movie/id/1');?>">
-								<img src="<?php echo base_url();?>assets/images/genius.jpg" alt="">
-								<p>T1 ฉลาดเกมส์โกง</p>
+								<img src="<?php echo base_url();?>assets/images/siam.jpg" alt="">
+								<p>T1 สยามสแควร์</p>
 							</a>
 						</li>
 						<li class="sub-content c-two">
@@ -58,6 +58,12 @@
 								<p>T4 9 ศาสตรา</p>
 							</a>
 						</li>
+						<li class="sub-content c-five">
+							<a href="<?php echo site_url('movie/id/5');?>">
+								<img src="<?php echo base_url();?>assets/images/popeye.jpg" alt="">
+								<p>T5 ป๊อปอาย มายเฟรนด์</p>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -65,9 +71,9 @@
 				<div class="container">
 					<p>เงื่อนไขการร่วมกิจกรรม</p>
 					<p>- ผู้โชคดีจะได้รับแพ็คเกจทัวร์พร้อมที่พักไปชมเทศกาลภาพยนตร์นานาชาติโอกินาว่า ณ จังหวัดโอกินาว่า ประเทศญี่ปุ่น กับบริษัท โยชิโมโต้ เอ็นเทอร์เทนเมนท์ (ไทยแลนด์) จำกัด 2 รางวัล รางวัลละ 1 ที่นั่ง</p>
-					<p>- ร่วมโหวตได้ทาง http://j-channel.jp/th/oimf/  ตั้งแต่วันที่ 1 – 15 มีนาคม 2561 (รอคอนเฟิมนะ) (ปิดรับผลโหวตเวลา 24.00 น. ของวันที่ 15 มีนาคม 2561</p>
+					<p>- ร่วมโหวตได้ทาง http://j-channel.jp/th/oimf/  ตั้งแต่วันที่ 9 – 24 มีนาคม 2561 (ปิดรับผลโหวตเวลา 24.00 น. ของวันที่ 24 มีนาคม 2561</p>
 					<p>- ผู้ร่วมกิจกรรมโหวต สามารถโหวตได้ชั่วโมงละ 1 โหวตเท่านั้น</p>
-					<p>- ประกาศรายชื่อผู้โชคดีทาง http://j-channel.jp/th/oimf/ ในวันที่ xxx</p>
+					<p>- ประกาศรายชื่อผู้โชคดีทาง http://j-channel.jp/th/oimf/ ในวันที่ 26 มีนาคม 2561</p>
 					<p>- ผู้รับรางวัลจะต้องเป็นผู้ที่ทายผลตัวแทนภาพยนตร์ของประเทศไทยที่ถูกต้องเท่านั้น</p>
 					<p>- ผลการตัดสินของคณะกรรมการถือเป็นที่สิ้นสุด</p>
 				</div>
@@ -75,13 +81,13 @@
 			<div class="sponsor">
 				<div class="container">
 					<ul>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/contentth.png" alt=""></a></li>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/culture.png" alt=""></a></li>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/mono29.png" alt=""></a></li>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/mthai.png" alt=""></a></li>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/jchannel.png" alt=""></a></li>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/yoshimoto.png" alt=""></a></li>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/mcip.png" alt=""></a></li>
+						<li><a href="https://www.m-culture.go.th/mculture_th/main.php?filename=index" target="_blank"><img src="<?php echo base_url();?>assets/images/contentth.png" alt=""></a></li>
+						<li><a href="https://www.m-culture.go.th/mculture_th/main.php?filename=index" target="_blank"><img src="<?php echo base_url();?>assets/images/culture.png" alt=""></a></li>
+						<li><a href="https://mono29.com" target="_blank"><img src="<?php echo base_url();?>assets/images/mono29.png" alt=""></a></li>
+						<li><a href="https://www.mthai.com" target="_blank"><img src="<?php echo base_url();?>assets/images/mthai.png" alt=""></a></li>
+						<li><a href="http://j-channel.jp" target="_blank"><img src="<?php echo base_url();?>assets/images/jchannel.png" alt=""></a></li>
+						<li><a href="http://yoshimoto.co.th" target="_blank"><img src="<?php echo base_url();?>assets/images/yoshimoto.png" alt=""></a></li>
+						<li><a href="http://mcip.asia/" target="_blank"><img src="<?php echo base_url();?>assets/images/mcip.png" alt=""></a></li>
 					</ul>
 				</div>
 			</div>

@@ -278,14 +278,13 @@ ul li {
 
 .wrapper .container .content .container ul li {
   display: inline-block;
-  width: 24%;
-  padding: 0 25px;
+  width: calc(100%/3 - 5px);
+  padding: 25px;
 }
 
 @media (max-width: 70em) {
   .wrapper .container .content .container ul li {
     width: 48%;
-    margin-top: 40px;
   }
 }
 
@@ -294,6 +293,7 @@ ul li {
     display: block;
     width: 100%;
     padding: 0;
+    padding: 20px 0;
   }
 }
 
@@ -408,6 +408,13 @@ ul li {
 @media (max-width: 70em) {
   .wrapper .container .footer .container {
     width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 650px) {
+  .wrapper .container .content .container ul li {
+    width: 67%;
     margin: 0 auto;
   }
 }
@@ -550,9 +557,27 @@ ul li {
 
 .movie .container .trailer .sub-trailer .detail.short-info p {
   color: #000000;
-  padding: 28px 0;
+  padding: 35px 0;
   font-size: 8px;
   font-size: 0.8rem;
+}
+
+@media (max-width: 70em) {
+  .movie .container .trailer .sub-trailer .detail.short-info p {
+    padding: 28px 0;
+  }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .movie .container .trailer .sub-trailer .detail.short-info p {
+    padding: 28px 0;
+  }
+}
+
+@media (max-width: 40em) {
+  .movie .container .trailer .sub-trailer .detail.short-info p {
+    padding: 26px 0;
+  }
 }
 
 .movie .container .trailer .sub-trailer .detail.short-info p.dtmr {
@@ -561,7 +586,7 @@ ul li {
 
 @media (max-width: 70em) {
   .movie .container .trailer .sub-trailer .detail.short-info p.dtmr {
-    padding: 14px 0;
+    padding: 28px 0;
   }
 }
 
@@ -584,24 +609,6 @@ ul li {
 @media (max-width: 40em) {
   .movie .container .trailer .sub-trailer .detail.short-info p.ovs {
     padding: 26px 0;
-  }
-}
-
-@media (max-width: 70em) {
-  .movie .container .trailer .sub-trailer .detail.short-info p {
-    padding: 21px 0;
-  }
-}
-
-@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  .movie .container .trailer .sub-trailer .detail.short-info p {
-    padding: 28px 0;
-  }
-}
-
-@media (max-width: 40em) {
-  .movie .container .trailer .sub-trailer .detail.short-info p {
-    padding: 19px 0;
   }
 }
 
@@ -669,7 +676,7 @@ ul li {
     height: 253px;
   }
   .movie .container .trailer .sub-trailer .detail.short-info p {
-    padding: 35px 0;
+    padding: 42px 0;
   }
   .movie .container .trailer .sub-trailer .detail.short-info p.dtmr {
     padding: 28px 0;
@@ -680,6 +687,9 @@ ul li {
   .movie .container .trailer {
     top: 200px;
     left: 45px;
+  }
+  .movie .container .trailer .sub-trailer .detail.short-info p {
+    padding: 35px 0;
   }
   .movie .container .trailer .sub-trailer .detail.short-info p.ovs {
     padding: 35px 0;
@@ -740,7 +750,7 @@ ul li {
     height: 203px;
   }
   .movie .container .trailer .sub-trailer .detail.short-info p {
-    padding: 22px 0;
+    padding: 29px 0;
   }
   .movie .container .trailer .sub-trailer .detail.short-info p.ovs {
     padding: 29px 0;

@@ -55,13 +55,13 @@
 			<div class="sponsor">
 				<div class="container">
 					<ul>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/contentth.png" alt=""></a></li>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/culture.png" alt=""></a></li>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/mono29.png" alt=""></a></li>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/mthai.png" alt=""></a></li>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/jchannel.png" alt=""></a></li>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/yoshimoto.png" alt=""></a></li>
-						<li><a href=""><img src="<?php echo base_url();?>assets/images/mcip.png" alt=""></a></li>
+						<li><a href="https://www.m-culture.go.th/mculture_th/main.php?filename=index" target="_blank"><img src="<?php echo base_url();?>assets/images/contentth.png" alt=""></a></li>
+						<li><a href="https://www.m-culture.go.th/mculture_th/main.php?filename=index" target="_blank"><img src="<?php echo base_url();?>assets/images/culture.png" alt=""></a></li>
+						<li><a href="https://mono29.com" target="_blank"><img src="<?php echo base_url();?>assets/images/mono29.png" alt=""></a></li>
+						<li><a href="https://www.mthai.com" target="_blank"><img src="<?php echo base_url();?>assets/images/mthai.png" alt=""></a></li>
+						<li><a href="http://j-channel.jp" target="_blank"><img src="<?php echo base_url();?>assets/images/jchannel.png" alt=""></a></li>
+						<li><a href="http://yoshimoto.co.th" target="_blank"><img src="<?php echo base_url();?>assets/images/yoshimoto.png" alt=""></a></li>
+						<li><a href="http://mcip.asia/" target="_blank"><img src="<?php echo base_url();?>assets/images/mcip.png" alt=""></a></li>
 					</ul>
 				</div>
 			</div>
