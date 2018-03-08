@@ -39,14 +39,14 @@
     <?php if ($this->session->flashdata('save')):?>
     $.fancybox.open({
       type: 'image',
-      src: '<?php echo base_url('assets/images/thankyou.png');?>'
+      href: '<?php echo base_url('assets/images/thankyou.png');?>'
     })
     <?php endif;?>
 
     <?php if ($this->session->flashdata('expire')):?>
     $.fancybox.open({
       type: 'image',
-      src: '<?php echo base_url('assets/images/sorry.png');?>'
+      href: '<?php echo base_url('assets/images/sorry.png');?>'
     })
     <?php endif;?>
 
