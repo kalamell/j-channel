@@ -15,12 +15,12 @@ class Mydata extends CI_Controller {
 		
 		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.movie_id = movie.movie_id) as c FROM movie';
 		$this->movie = $this->db->query($sql)->result();
-		
+
 		$w = '';
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			
 
-			$w = " WHERE firstname LIKE '%".$txt".%' OR lastname LIKE '%".$txt."%' OR email LIKE '%".$txt."%' ";
+			$w = " WHERE firstname LIKE '%".$txt."%' OR lastname LIKE '%".$txt."%' OR email LIKE '%".$txt."%' ";
 		}
 
 		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.member_id = member.id) as c FROM member'.$w;
