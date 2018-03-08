@@ -17,11 +17,9 @@ class Mydata extends CI_Controller {
 		$this->movie = $this->db->query($sql)->result();
 		$w = '';
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-			$this->db->like('firtname', $this->input->post('txt'))
-						->or_like('lastname', $this->input->post('txt'))
-						->or_like('email', $this->input->post('txt'));
+			
 
-			$w = " WHERE firtname LIKE '%".$txt".%' OR lastname LIKE '".$txt."' OR email LIKE '%".$txt."%' ";
+			$w = " WHERE firstname LIKE '%".$txt".%' OR lastname LIKE '".$txt."' OR email LIKE '%".$txt."%' ";
 		}
 
 		$sql = 'SELECT *,(SELECT COUNT(vote_id) FROM vote WHERE vote.member_id = member.id) as c FROM member'.$w;
