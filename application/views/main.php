@@ -20,7 +20,7 @@
 					<a href="<?php echo site_url();?>"><img src="<?php echo base_url();?>assets/images/logo.jpg" alt=""></a>
 				</div>
 				<div class="sub-header h-two">
-					<p>ลุ้นบินลัดฟ้า ร่วมสัมผัสประสบการณ์เกาะสวรรค์และเทศกาลภาพยนตร์นานาชาติโอกินาว่า<br/>ถึงประเทศญี่ปุ่น เพียงร่วมโหวตภาพยนตร์ที่คุณชื่นชอบ<br/>เพื่อเป็นตัวแทนภาพยนตร์ไทยในงานภาพยนตร์นานาชาติโอกินาว่า</p>
+					<p>ลุ้นบินลัดฟ้า ร่วมสัมผัสประสบการณ์เกาะสวรรค์และเทศกาลภาพยนตร์นานาชาติโอกินาว่า<br/>ถึงประเทศญี่ปุ่น เพียงร่วมทายผลภาพยนตร์ที่คุณชื่นชอบ<br/>เพื่อเป็นตัวแทนภาพยนตร์ไทยในงานภาพยนตร์นานาชาติโอกินาว่า</p>
 					<img src="<?php echo base_url();?>assets/images/headcenter.png" alt="">
 				</div>
 				<div class="sub-header h-three" onclick="top.location.href = 'http://j-channel.jp/th/oimf/';" style="cursor: pointer;">
